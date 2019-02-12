@@ -1,12 +1,16 @@
 $(document).ready(function() {
-  $("#blanks form").submit(function() {
-    $(".name").append("blah blah");
-    $(".").append("blah blah");
-    $(".animal").append("blah blah");
-    $(".exclamation").append("blah blah");
-    $(".verb").append("blah blah");
-    $(".noun").append("blah blah");
+  $("#blanks form").submit(function(event) {
 
-    $("#story").show();
+    $(".first-name").text($("#fname").val());
+    $(".Last-name").text($("#lname").val());
+    $(".address").text($("#address").val());
+    $(".menu").text($("#menu").val());
+
+
+    $("#confirmation").show();
+    event.preventDefault();
+
+
+
   });
 });
